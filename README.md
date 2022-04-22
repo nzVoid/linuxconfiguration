@@ -7,5 +7,6 @@ monitor_setup.sh - checks whether an external monitor is connected, if connected
 
 ## Keyboard shortcuts
 **mod+Shift+Insert** - activates switching the layout from Russian to English. It turns on at the start of the session, but it does not fly off, so a shortcut is made
+
 **mod+Shift+Insert** - executing the monitor_setup.sh
 
