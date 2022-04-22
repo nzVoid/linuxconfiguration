@@ -7,11 +7,6 @@ wget https://bin.equinox.io/c/4VmDzA7iaHb/ngrok-stable-linux-amd64.zip
 unzip ngrok-stable-linux-amd64.zip
 sudo mv ./ngrok /usr/bin/ngrok
 
-#nvm install node.js
-curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.36.0/install.sh | bash
-source ~/.bashrc
-nvm install node
-
 #vim
 sudo apt install vim-gtk
 mkdir -p ~/.vim/pack/plugins/start
@@ -98,18 +93,3 @@ sudo apt install alacritty
 sudo apt install lxterminal
 #xterm
 sudo apt install xterm 
-
-#install config
-#i3 setup by nzVoid
-#SOFT
-sudo apt install i3
-sudo apt install rofi
-sudo apt install nitrogen
-#CONFIG
-rm ~/.config/i3/config && cp ./i3/config ~/.config/i3/config
-rm /etc/i3status.conf && cp ./i3/i3status.conf /etc
-cp monitor_setup.sh displayOn.sh /usr/local/bin
-cp ./i3/i3edit.sh /usr/local/bin
-
-#Default terminal set
-sudo update-alternative --config x-terminal-emulator
